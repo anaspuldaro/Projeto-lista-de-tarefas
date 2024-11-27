@@ -1,0 +1,74 @@
+body, h1, h2, p, ul, li, form, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Adicionar Tarefas */
+.add-task form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-task input, .add-task select, .add-task button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-task button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-task button:hover {
+    background-color: #0056b3;
+}
+
+/* Lista de Tarefas */
+.task-list ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.task-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

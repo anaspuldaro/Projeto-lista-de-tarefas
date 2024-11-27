@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <p>Adicione suas tarefas abaixo!</p>
+    </header>
+
+    <main>
+        <section class="add-task">
+            <h2>Adicionar Tarefa</h2>
+            <form id="task-form">
+                <label for="task-title">Título da Tarefa:</label>
+                <input type="text" id="task-title" name="task-title" placeholder="Digite o título da tarefa" required>
+
+                <label for="task-date">Data de Entrega:</label>
+                <input type="date" id="task-date" name="task-date" required>
+
+                <label for="task-priority">Prioridade:</label>
+                <select id="task-priority" name="task-priority" required>
+                    <option value="alta">Alta</option>
+                    <option value="media">Média</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+
+                <button type="submit">Adicionar Tarefa</button>
+            </form>
+        </section>
+
+        <section class="task-list">
+            <h2>Tarefas</h2>
+            <ul id="tasks">
+                <!-- Tarefas serão adicionadas aqui -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Ana Caroline Spuldaro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
